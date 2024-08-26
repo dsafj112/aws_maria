@@ -1,17 +1,17 @@
 package com.boot.board_240718.controller;
 
 import com.boot.board_240718.model.User;
-import com.boot.board_240718.repository.BoardRepository;
 import com.boot.board_240718.repository.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.annotation.Secured;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/api")
 @Slf4j
 public class UserApiController {
