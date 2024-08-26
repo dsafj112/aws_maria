@@ -14,8 +14,8 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- 테이블 데이터 sola.board:~10 rows (대략적) 내보내기
-INSERT IGNORE INTO `board` (`id`, `user_id`, `title`, `content`) VALUES
+-- 테이블 데이터 sola.board:~9 rows (대략적) 내보내기
+INSERT INTO `board` (`id`, `user_id`, `title`, `content`) VALUES
 	(6, 1, '제목6', '내용6'),
 	(7, 1, '제목7', '내용7'),
 	(8, 1, '제목8', '내용8'),
@@ -27,19 +27,19 @@ INSERT IGNORE INTO `board` (`id`, `user_id`, `title`, `content`) VALUES
 	(18, 1, '1212', '1212');
 
 -- 테이블 데이터 sola.role:~2 rows (대략적) 내보내기
-INSERT IGNORE INTO `role` (`id`, `name`) VALUES
+INSERT INTO `role` (`id`, `name`) VALUES
 	(1, 'ROLE_USER'),
 	(2, 'ROLE_ADMIN');
 
--- 테이블 데이터 sola.user:~2 rows (대략적) 내보내기
-INSERT IGNORE INTO `user` (`id`, `username`, `password`, `enabled`) VALUES
+-- 테이블 데이터 sola.user:~4 rows (대략적) 내보내기
+INSERT INTO `user` (`id`, `username`, `password`, `enabled`) VALUES
 	(1, 'aaa', '$2a$10$Z16yBvuZ./N1iaDKCipAx.5c7Zm65YDtv6Uy5SOU4xM4YGYQEQ2k2', b'1'),
 	(2, 'bbb', '$2a$10$FNIql7VCCaOZAWcpceQGTODmGhlh65YXBLLD2wEYMHtXkDLXc4FnG', b'1'),
 	(3, 'ccc', '$2a$10$TUR9lZ0dBDQ07bznl3lY8uTsgHmsiBXYzMUXFY3bdu5GVdGIdvcr.', b'1'),
 	(4, 'dd', '$2a$10$g3/uTeDBSz3ZKCSwEXos9.a.KnsP96EXD6H/WLILluyBqb3ihFsYS', b'1');
 
--- 테이블 데이터 sola.user_role:~4 rows (대략적) 내보내기
-INSERT IGNORE INTO `user_role` (`user_id`, `role_id`) VALUES
+-- 테이블 데이터 sola.user_role:~5 rows (대략적) 내보내기
+INSERT INTO `user_role` (`user_id`, `role_id`) VALUES
 	(1, 1),
 	(2, 1),
 	(3, 1),
